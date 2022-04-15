@@ -1,7 +1,12 @@
 package com.api.product;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProductRepo extends JpaRepository<Product,Integer>{
+@Repository
 
+     public interface ProductRepo extends PagingAndSortingRepository<Product,Integer>{
+
+//public interface ProductRepo extends JpaRepository<Product,Integer>{
+	
 }
